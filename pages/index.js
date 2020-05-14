@@ -27,7 +27,19 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <img src="/flowers.jpg" />
+        <div>
+          <img src="/flowers.jpg" />
+          <p className="caption">
+            Photo by{' '}
+            <a href="https://unsplash.com/@jblesly?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+              Lesly Juarez
+            </a>{' '}
+            on{' '}
+            <a href="https://unsplash.com/s/photos/pots-flowers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </p>
+        </div>
       </main>
 
       <style jsx>{`
@@ -51,6 +63,13 @@ export default function Home() {
         .title {
           margin-top: 0;
           font-weight: bold;
+        }
+        .caption {
+          font-size: smaller;
+          color: #ccc;
+        }
+        .caption a {
+          color: inherit;
         }
       `}</style>
     </AppChrome>
