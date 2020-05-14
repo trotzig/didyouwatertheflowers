@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import React from 'react';
 
 export default function AppChrome({ children }) {
   return (
     <div className="root">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {children}
       <style jsx>{`
         .root {
@@ -23,6 +27,12 @@ export default function AppChrome({ children }) {
 
         * {
           box-sizing: border-box;
+        }
+        input[type="text"], input[type="password"] {
+          padding: 5px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
         }
       `}</style>
     </div>

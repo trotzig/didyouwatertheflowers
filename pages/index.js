@@ -10,7 +10,6 @@ export default function Home() {
     <AppChrome>
       <Head>
         <title>Welcome to Did you water the flowers?</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
